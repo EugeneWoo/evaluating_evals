@@ -10,6 +10,6 @@ TL;DR it should come as no surprise that **Atla Selene** won this round on accou
 - Higher precision on 'Relevant' class (1.00 vs 0.56). GPT4 had more False Positives.
 - Very clean confusion matrix, with low misclassification rate (False Positive / False Negative both minimal)
 - Atla's performance is more balanced between classes, as seen from the identical Macro F1 and Weighted F1
-- However, I did not notice material differences in the quality of the critiques between models. The nuances may surface if we deepdive into cohesiveness, helpfulness, faithfulness, etc
+- However, I did not notice material differences in the quality of the critiques between models. Perhaps the nuances would become obvious if we deepdive into cohesiveness, helpfulness, faithfulness, etc
 
-Time and budget permitting, I would like to think more critically about the metrics, and benchmark Atla Selene against Claude, Gemini, DeepSeek, and Mistral across various use cases in addition to RAG. 
+Time and budget permitting, I would like to expand the breadth of metrics including thinking critically about custom metrics, and benchmark Atla Selene against Claude, Gemini, DeepSeek, and Mistral across various use cases in addition to RAG.
