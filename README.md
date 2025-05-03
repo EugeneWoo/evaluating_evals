@@ -1,6 +1,6 @@
 <h2>Evaluating Evals for Retrieval Relevance</h2>
 
-I created this notebook to compare **Atla Selene** against GPT4 via Phoenix Arize (I omitted GPT4o due to technical issues), by creating a straightforward comparison of their performances in classifying the relevance or irrelevance of documents retrieved by RAG. To determine relevance to the corresponding query, I evaluated their predictions against a sample of ground-truth labels (n=30) from the Wiki_QA-Train benchmark dataset.
+I created this notebook to run a quick comparison **Atla Selene** against GPT4 via Phoenix Arize, by creating a straightforward comparison of their performances in classifying the relevance or irrelevance of documents retrieved by RAG. To determine relevance to the corresponding query, I evaluated their predictions against a sample of ground-truth labels (n=30) from the Wiki_QA-Train benchmark dataset.
 
 TL;DR it should come as no surprise that **Atla Selene** won this round on account of:
 - Accuracy. It was 24% better than GPT4
