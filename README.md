@@ -11,30 +11,31 @@ TL;DR it should come as no surprise that **Atla Selene** won this round on accou
 
 Time and budget permitting, I would like to expand the breadth of metrics including thinking critically about custom metrics, and benchmark against Claude, DeepSeek, and Mistral across other use cases apart from RAG.
 
-*BENCHMARKING RESULTS -->*
+
+<h3>DETAILED BENCHMARKING RESULTS</h3>
 
 🥇 **Atla Selene**
-	•	Accuracy: 0.97 – highest among all models.
-	•	Precision on “True”: 1.00 – perfect, with zero false positives.
-	•	Recall on “True”: 0.94 – only one false negative.
-	•	Balanced performance: Identical Macro F1 and Weighted F1 of 0.97.
-	•	Confusion Matrix: Nearly diagonal – excellent separation of classes.
-	•	Verdict: Strongest overall, with reliable and consistent predictions.
+- Accuracy: 0.97 --> ***highest among all models***
+- Precision on “True”: 1.00 – perfect, with zero false positives.
+- Recall on “True”: 0.94 – only one false negative.
+- Balanced performance: Identical Macro F1 and Weighted F1 of 0.97.
+- Confusion Matrix: Nearly diagonal – excellent separation of classes.
+- Verdict: Strongest overall, with reliable and consistent predictions.
 
 🥈 **Gemini 2.0 Flash**
-	•	Accuracy: 0.70 – equal to GPT-4o, but with better recall on the “True” class.
-	•	Precision / Recall:
-	•	“True”: 0.53 / 0.90 – high recall, but weaker precision (many false positives).
-	•	“False”: 0.92 / 0.60 – high precision, weaker recall.
-	•	Macro F1: 0.75 recall average; F1-score of 0.70, outperforming GPT-4o on balance.
-	•	Confusion Matrix: 40% of “False” class mislabeled as “True”, similar to GPT-4o.
-	•	Verdict: Slightly better class balance than GPT-4o, though still not ideal.
+- Accuracy: 0.70 --> *equal to GPT-4o, but with better recall on the “True” class.*
+- Precision / Recall:
+	-  “True”: 0.53 / 0.90 – high recall, but weaker precision (many false positives).
+ 	- “False”: 0.92 / 0.60 – high precision, weaker recall.
+- Macro F1: 0.75 recall average; F1-score of 0.70, outperforming GPT-4o on balance.
+- Confusion Matrix: 40% of “False” class mislabeled as “True”, similar to GPT-4o.
+- Verdict: Slightly better class balance than GPT-4o, though still not ideal.
 
 🥉 **GPT-4o via Arize**
-	•	Accuracy: 0.67 – lowest of the three.
-	•	Precision / Recall:
-	•	“Relevant”: 0.50 / 0.80
-	•	“Unrelated”: 0.86 / 0.60
-	•	Macro F1: 0.66 – dragged down by inconsistent class treatment.
-	•	Confusion Matrix: Shows confusion in distinguishing unrelated docs, with 40% misclassified.
-	•	Verdict: Acceptable in simpler use cases, but less dependable than the others.
+- Accuracy: 0.67 --> *lowest of the three*
+- Precision / Recall:
+	- “True”: 0.50 / 0.80
+	- “False”: 0.86 / 0.60
+- Macro F1: 0.66 – dragged down by inconsistent class treatment.
+- Confusion Matrix: Shows confusion in distinguishing unrelated docs, with 40% misclassified.
+- Verdict: Acceptable in simpler use cases, but less dependable than the others.
