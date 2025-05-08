@@ -1,6 +1,6 @@
-<h2>Evaluating Evals for Retrieval Relevance</h2>
+<h2>Evaluating Evals for RAG Retrieval Relevance</h2>
 
-I created this notebook to run a quick comparison **Atla Selene** against Gemini 2.0 Flash and GPT-4o (via the open-source Phoenix Arize), by creating a straightforward comparison of their performances in classifying the relevance or irrelevance of documents retrieved by RAG. To determine relevance to the corresponding query, I evaluated their predictions against a sample of ground-truth labels (n=30) from the Wiki_QA-Train benchmark dataset.
+I created this notebook to run a simple benchmark of [Atla Selene](https://docs.atla-ai.com/src/documentation/introduction) against Gemini 2.0 Flash and GPT-4o, by creating a straightforward comparison of their performances in classifying the relevance of a retrieved text against the question that was asked. To determine relevance, I evaluated their classifications against a sample of ground-truth labels (n=30) from the Wiki_QA-Train benchmark dataset.
 
 TL;DR it should come as no surprise that **Atla Selene** won this round on account of:
 - Accuracy. It was c.30% better than Gemini and GPT.
@@ -9,7 +9,7 @@ TL;DR it should come as no surprise that **Atla Selene** won this round on accou
 - Atla and Gemini had more balanced performances between classes, as seen from the identical/very close Macro F1 and Weighted F1.
 - No material differences were noted in critique quality, though a deeper dive into subjective aspects like cohesiveness, helpfulness, and faithfulness etc may reveal nuances.
 
-Time and budget permitting, I would like to expand the breadth of metrics including thinking critically about custom metrics, and benchmark against Claude, DeepSeek, and Mistral across other use cases apart from RAG.
+Time and budget permitting, I would like to expand the benchmark to Claude, DeepSeek, and Mistral and across other use cases apart from RAG.
 
 
 <h3>DETAILED BENCHMARKING RESULTS</h3>
